@@ -30,13 +30,13 @@ return {
 		vim.keymap.set(
 			"n",
 			"<leader>e",
-			":Neotree filesystem focus current<CR>",
+			":Neotree filesystem focus right<CR>",
 			{ desc = "Open Neotree at current file" }
 		)
 		vim.keymap.set(
 			"n",
 			"<leader>E",
-			":Neotree filesystem toggle current<CR>",
+			":Neotree filesystem toggle right<CR>",
 			{ desc = "Open Neotree at current file" }
 		)
 	end,
