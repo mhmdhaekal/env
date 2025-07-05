@@ -1,8 +1,8 @@
 local fzf = require("fzf-lua")
 
 -- neotree
-vim.keymap.set("n", "<leader>e", ":Neotree filesystem focus right<CR>", { desc = "Open Neotree at current file" })
-vim.keymap.set("n", "<leader>E", ":Neotree filesystem toggle right<CR>", { desc = "Open Neotree at current file" })
+vim.keymap.set("n", "<leader>e", ":NvimTreeFocus<CR>", { desc = "Open Neotree at current file" })
+vim.keymap.set("n", "<leader>E", ":NvimTreeToggle<CR>", { desc = "Open Neotree at current file" })
 --
 
 -- conform
