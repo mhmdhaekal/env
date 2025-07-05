@@ -1,43 +1,19 @@
-return {
-	"nvim-neo-tree/neo-tree.nvim",
-	branch = "v3.x",
-	dependencies = {
-		"nvim-lua/plenary.nvim",
-		"nvim-tree/nvim-web-devicons",
-		"MunifTanjim/nui.nvim",
+vim.pack.add({
+	{
+		src = "https://github.com/MunifTanjim/nui.nvim"	
 	},
-	lazy = false,
-	---@module "neo-tree"
-	---@type neotree.Config?
-	opts = {},
-	config = function()
-		vim.diagnostic.config({
-			signs = {
-				text = {
-					[vim.diagnostic.severity.ERROR] = "",
-					[vim.diagnostic.severity.WARN] = "",
-					[vim.diagnostic.severity.INFO] = "",
-					[vim.diagnostic.severity.HINT] = "󰌵",
-				},
-			},
-		})
+	{
+		src = "https://github.com/nvim-tree/nvim-web-devicons"
+	},
+	{
+		src = "https://github.com/nvim-lua/plenary.nvim"
+	},
+	{
+		src = "https://github.com/nvim-neo-tree/neo-tree.nvim",
+	}
+})
 
-		require("neo-tree").setup({
-			popup_border_style = "",
-			window = { position = "right", width = 30 },
-		})
-
-		vim.keymap.set(
-			"n",
-			"<leader>e",
-			":Neotree filesystem focus right<CR>",
-			{ desc = "Open Neotree at current file" }
-		)
-		vim.keymap.set(
-			"n",
-			"<leader>E",
-			":Neotree filesystem toggle right<CR>",
-			{ desc = "Open Neotree at current file" }
-		)
-	end,
-}
+require("neo-tree").setup({
+	popup_border_style = "",
+	window = { position = "right", width = 30 },
+})

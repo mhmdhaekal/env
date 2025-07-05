@@ -1,6 +1,15 @@
--- Initialize plugins
-require("config.set")
-require("config.lazy")
+-- plugins
+require("plugins.theme")
+require("plugins.tree")
+require("plugins.lsp")
+require("plugins.blink")
+require("plugins.conform")
+require("plugins.treesitter")
+require("plugins.mini")
+require("plugins.fzf")
 
--- Set colorscheme
+require("config.set")
+require("config.keymap")
+require("config.treesitter")
+
 vim.cmd.colorscheme("catppuccin")
