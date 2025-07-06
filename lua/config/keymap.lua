@@ -33,3 +33,14 @@ vim.keymap.set("n", "<leader>s/", function()
 end, { desc = "Fzf search current buffer" })
 
 --
+
+-- Diagnostic keymaps
+vim.keymap.set("n", "<C-h>", "<C-w><C-h>", { desc = "Move focus to the left window" })
+vim.keymap.set("n", "<C-l>", "<C-w><C-l>", { desc = "Move focus to the right window" })
+vim.keymap.set("n", "<C-j>", "<C-w><C-j>", { desc = "Move focus to the lower window" })
+vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper window" })
+
+-- buffer
+vim.keymap.set("n", "<Tab>", ":bnext<CR>", { desc = "Buffer next" })
+vim.keymap.set("n", "<S-Tab>", ":bprev<CR>", { desc = "Buffer next" })
+vim.keymap.set("n", "<leader>bd", ":bd<CR>", { desc = "Buffer delete" })

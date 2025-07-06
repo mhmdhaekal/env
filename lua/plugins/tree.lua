@@ -9,6 +9,10 @@ vim.pack.add({
 
 
 require('nvim-tree').setup({
+	filters = {
+		custom = { ".git", "node_modules", ".vscode" },
+		dotfiles = true,
+	},
 	view = {
 		float = {
 			enable = true,

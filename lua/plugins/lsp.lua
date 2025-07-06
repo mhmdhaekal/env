@@ -11,7 +11,7 @@ vim.pack.add({
 require("mason").setup()
 
 local vue_language_server_path = vim.fn.stdpath("data")
-	.. "/mason/packages/vue-language-server/node_modules/@vue/language-server"
+		.. "/mason/packages/vue-language-server/node_modules/@vue/language-server"
 
 local vue_plugin = {
 	name = "@vue/typescript-plugin",
@@ -38,33 +38,33 @@ local servers = {
 		},
 	},
 	lua_ls = {
-	 settings = {
-				Lua = {
-					runtime = {
-						-- Tell the language server which version of Lua you're using (most likely LuaJIT in the case of Neovim)
-						version = 'LuaJIT',
-						-- Setup your lua path
-						path = runtime_path,
-					},
-					diagnostics = {
-						-- Get the language server to recognize the `vim` global
-						globals = {'vim'},
-					},
-					workspace = {
-						-- Make the server aware of Neovim runtime files
-						library = vim.api.nvim_get_runtime_file('', true),
-					},
-					-- Do not send telemetry data containing a randomized but unique identifier
-					telemetry = {
-						enable = false,
-					},
+		settings = {
+			Lua = {
+				runtime = {
+					-- Tell the language server which version of Lua you're using (most likely LuaJIT in the case of Neovim)
+					version = 'LuaJIT',
+					-- Setup your lua path
+					path = runtime_path,
+				},
+				diagnostics = {
+					-- Get the language server to recognize the `vim` global
+					globals = { 'vim' },
+				},
+				workspace = {
+					-- Make the server aware of Neovim runtime files
+					library = vim.api.nvim_get_runtime_file('', true),
+				},
+				-- Do not send telemetry data containing a randomized but unique identifier
+				telemetry = {
+					enable = false,
 				},
 			},
+		},
 	},
 	tailwindcss = {},
 	sourcekit = {},
 	jsonls = {},
-	pyrefly = {},
+	ty = {},
 	vtsls = {
 		settings = {
 			vtsls = {
