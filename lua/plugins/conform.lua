@@ -11,7 +11,7 @@ require("conform").setup({
 	formatters_by_ft = {
 		astro = { "prettierd" },
 		lua = { "stylua" },
-		javascript = { "eslint_d" },
+		javascript = { "prettierd" },
 		typescript = { "prettierd" },
 		vue = { "prettierd" },
 		rust = { "rustfmt" },

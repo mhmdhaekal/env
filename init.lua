@@ -12,4 +12,4 @@ require("config.set")
 require("config.keymap")
 require("config.treesitter")
 
-vim.cmd.colorscheme("catppuccin")
+vim.cmd.colorscheme("tokyonight-night")

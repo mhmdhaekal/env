@@ -65,6 +65,7 @@ local servers = {
 	sourcekit = {},
 	jsonls = {},
 	ty = {},
+	oxlint = {},
 	vtsls = {
 		settings = {
 			vtsls = {
