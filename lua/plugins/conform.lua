@@ -17,7 +17,7 @@ require("conform").setup({
 		rust = { "rustfmt" },
 		python = { "ruff" },
 		sql = { "sqruff" },
-		json = { "biome" },
+		json = { "prettierd" },
 		go = { "gofmt", "goimports" },
 	},
 })

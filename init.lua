@@ -7,6 +7,7 @@ require("plugins.conform")
 require("plugins.treesitter")
 require("plugins.mini")
 require("plugins.fzf")
+require("plugins.neo")
 
 require("config.set")
 require("config.keymap")
