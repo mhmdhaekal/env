@@ -44,3 +44,8 @@ vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper win
 vim.keymap.set("n", "<Tab>", ":bnext<CR>", { desc = "Buffer next" })
 vim.keymap.set("n", "<S-Tab>", ":bprev<CR>", { desc = "Buffer next" })
 vim.keymap.set("n", "<leader>bd", ":bd<CR>", { desc = "Buffer delete" })
+
+-- relative number
+vim.keymap.set("n", "<leader>rn", function()
+	vim.opt.relativenumber = not vim.opt.relativenumber:get()
+end, { desc = "Toggle relative number" })
